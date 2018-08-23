@@ -1,0 +1,13 @@
+## post/meta
+
+[pubdate]
+other = "Diterbitkan"
+
+[moddate]
+other = "Diubah"
+
+[translation]
+other = "Terjemahan"
+
+[readingtime]
+other = "Baca {{ .Count }} menit"

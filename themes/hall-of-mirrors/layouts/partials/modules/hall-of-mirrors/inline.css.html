@@ -1,0 +1,29 @@
+<style>
+  [itemtype="http://schema.org/ImageGallery"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure {
+    text-align: center;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure a {
+    border-bottom: none;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure a:hover {
+    background-color: inherit;
+  }
+  [itemprop="caption description"] {
+    font-size: small;
+  }
+  figure {
+    margin: 2px;
+    line-height: 10px;
+  }
+  figure a {
+    height: 0;
+    display: inline-block;
+  }
+</style>

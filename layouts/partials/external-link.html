@@ -1,0 +1,5 @@
+{{- if eq .type "referral" -}}
+  <a target="_blank" rel="external nofollow noopener" href="{{ .uri }}" {{ with .title }}title="{{ . }}"{{ end }}>{{- .body | markdownify -}}</a>
+{{- else if eq .type "outbound" -}}
+  <a target="_blank" rel="external noreferrer noopener" href="{{ .uri }}" {{ with .title }}title="{{ . }}"{{ end }}>{{- .body | markdownify -}}</a>
+{{- end -}}

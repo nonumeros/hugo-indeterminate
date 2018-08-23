@@ -1,0 +1,13 @@
+## post/meta
+
+[pubdate]
+other = "Published"
+
+[moddate]
+other = "Modified"
+
+[translation]
+other = "Translation"
+
+[readingtime]
+other = "{{ .Count }} minute read"

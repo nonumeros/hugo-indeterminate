@@ -1,0 +1,7 @@
+<!--{{/*
+Usage: {{< referral "**BODY**" "URL" "OPTIONAL TITLE" >}}
+*/}}-->{{ if gt (len .Params) 2 -}}
+  {{ partial "external-link.html" (dict "type" "referral" "body" (.Get 0) "uri" (.Get 1) "title" (.Get 2)) }}
+{{- else -}}
+  {{ partial "external-link.html" (dict "type" "referral" "body" (.Get 0) "uri" (.Get 1)) }}
+{{- end }}

@@ -1,0 +1,57 @@
+baseurl = "https://domain.example/" # Controls base URL sitewide
+languageCode = "en-US" # Controls site language
+paginate = 11 # Number of posts to show before paginating
+
+# title = "After Dark" # Homepage title and page title suffix
+# copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
+
+DefaultContentLanguage = "en"
+
+#disableFastRender = true
+#i18n-warnings = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "After Dark" # Homepage title and page title suffix
+    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License."
+  [languages.es]
+    languageName = "Español"
+    title = "Después del Anochecer"
+    copyright = "Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional."
+  [languages.id]
+    languageName = "Bahasa"
+    title = "Setelah Gelap"
+    copyright = "Ciptaan disebarluaskan di bawah Lisensi Creative Commons Atribusi-NonKomersial-TanpaTurunan 4.0 Internasional."
+
+# Controls default theme and theme components
+theme = [
+  "hall-of-mirrors",
+  "fractal-forest",
+  "after-dark"
+]
+#
+#theme = "after-dark"
+
+enableRobotsTXT = true # Suggested, enable robots.txt file
+googleAnalytics = "" # Optional, add tracking Id for analytics
+disqusShortname = "" # Optional, add Disqus shortname for comments
+SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[params]
+  description = "" # Suggested, controls default description meta
+  author = "" # Optional, controls author name display on posts
+  hide_author = true # Optional, set true to hide author name on posts
+  show_menu = false # Optional, set true to enable section menu
+  powered_by = true # Optional, set false to disable credits
+  images = [
+    "https://source.unsplash.com/collection/983219/2000x1322"
+  ] # Suggested, controls default Open Graph images
+
+[params.modules.fractal_forest]
+  enabled = true # Optional, set false to disable module
+  decoders = ["bpgdec8a"] # Optional, 8-bit javascript decoder with animation
+
+[params.modules.hall_of_mirrors]
+  enabled = true # Required in version 0.1.0
